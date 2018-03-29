@@ -4,8 +4,8 @@ https://www.favicon-generator.org/
 //  How To Create A Blog or News Website | Newspaper 8
 https://www.youtube.com/watch?v=4IQ7RBr7ylg
 
-//  Making card with html and css
-https://www.youtube.com/watch?v=W3-KtP0MUp8
+//  Bootstrap tutorial 21 - Carousel (Slideshow)
+https://www.youtube.com/watch?v=1FnMDubA25A
 
-//  Tutoriel CSS : Card UI
-https://www.youtube.com/watch?v=EIvizoMrWvY
+//  jQuery Crash Course
+https://www.youtube.com/playlist?list=PLillGF-RfqbYJVXBgZ_nA7FTAAEpp_IAc
