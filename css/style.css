@@ -60,12 +60,30 @@ header img#logotipo{
 #menu li a{
   color: white;
   font-size: 16px;
-  padding: 10px 25px;
-  text-decoration: none;
-  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 25px;
 }
 #menu li.search .input-group{
   top: 8px;
+}
+
+/*Carousel*/
+#carousel{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 0;
+  border-radius: 10px;
+}
+#carousel img{
+  width: 100%;
+  height: 500px;
+  border-radius: 5px 5px 5px 5px;
+}
+#carousel a{
+  text-decoration: none;
+  color: white;
 }
 
 /*Notícias*/
@@ -89,7 +107,6 @@ header img#logotipo{
   margin-top: 50px;
 }
 #news .noticias h4{
-  color: #5E299A;
   font-size: 18px;
   font-family: 'OpenSans';
   font-weight: bold;
@@ -115,7 +132,7 @@ header img#logotipo{
   display: block;
 }
 
-/*Call To Action*/
+/*Premium*/
 #call-to-action {
 	text-align: center;
 	margin-top: 105px;
