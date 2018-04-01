@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
     <title>WebTech</title>
     <!-- Bootstrap 3 - CSS -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
@@ -10,6 +11,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/style-cards.css"/>
+    <link rel="stylesheet" href="css/style-mobile.css"/>
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -17,6 +19,23 @@
 <body>
     <!-- Cabeçalho -->
     <header>
+
+      <!-- Menu mobile -->
+      <div id="menu-mobile-mask" class="visible-xs">
+        <!-- Máscara do menu -->
+      </div>
+      <div id="menu-mobile" class="visible-xs">
+        <ul class="list-unstyled">
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Tecnologia</a></li>
+          <li><a href="#">Curiosidades</a></li>
+          <li><a href="#">Novidades</a></li>
+        </ul>
+        <div class="bar-close">
+          <button type="button" class="btn btn-close"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+
       <!-- Logo -->
       <div class="container">
         <img id="logotipo" src="img/logo.png" alt="Logotipo"/>
@@ -24,6 +43,11 @@
 
         <!-- Menu de navegação -->
         <div class="container">
+
+          <!-- Mobile -->
+          <button id="btn-bars" type="button"><i class="fas fa-bars"></i></button>
+          <button id="btn-search" type="button"><i class="fas fa-search"></i></button>
+
             <div class="row">
               <nav id="menu" class="pull-right">
                 <ul>
@@ -181,20 +205,20 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <p>6138<small>Membros registrados</small></p>
+                <p>6.138<small>Membros registrados</small></p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Premium -->
-        <div id="call-to-action">
+        <div id="premium">
 				  <div class="container">
   				  <div class="row text-center">
 						  <h2>Torne-se um membro premium</h2>
 						  <hr/>
 					  </div>
-					  <div class="row">
+					  <div class="row descricao">
 						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     				</div>
 					  <div class="text-center">
@@ -219,7 +243,7 @@
 						</div>
 						<div class="col-md-10">
 							<div class="row row-cols">
-								<div class="col-md-5 col-links">
+								<div class="col-md-5 col-links hidden-xs">
 									<h4>LINKS</h4>
 									<ul class="list-unstyled">
 										<li><a href="#"><i class="fa fa-angle-right"></i>Games</a></li>
@@ -229,11 +253,11 @@
 									</ul>
 								</div>
 								<div class="col-md-5 col-get-in-touch">
-									<h4>LOCALIZAÇÃO</h4>
-									<address>
+									<h4 class="hidden-xs">LOCALIZAÇÃO</h4>
+									<address class="hidden-xs">
 										<i class="fas fa-map-marker-alt"></i> <span>Rodovia BR-230, KM 22, s/n - 58053-000<br/>Água Fria, João Pessoa - PB</span>
 									</address>
-									<p><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>0800 707 9210</a></p>
+									<p class="hidden-xs"><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>0800 707 9210</a></p>
 									<ul class="list-unstyled list-socials">
 										<li>
 											<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -255,7 +279,7 @@
 				</div>
       </div>
       <div class="row row-cinza-escuro">
-        <div class="container">
+        <div class="container copyright-mobile">
           <p class="pull-left">Copyright © WebTech 2018. All rights reserved.</p>
 					<p class="pull-right text-roxo">Created by WebTech Developers</p>
         </div>
