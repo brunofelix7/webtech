@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <title>WebTech</title>
+    <!-- Bootstrap 3 - CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"/>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-cards.css"/>
+    <link rel="stylesheet" href="css/style-mobile.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+
+      <!-- Menu mobile -->
+      <div id="menu-mobile-mask" class="visible-xs">
+        <!-- Máscara do menu -->
+      </div>
+      <div id="menu-mobile" class="visible-xs">
+        <ul class="list-unstyled">
+					<li><a href="index.html">Home</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Tecnologia</a></li>
+          <li><a href="#">Curiosidades</a></li>
+          <li><a href="#">Novidades</a></li>
+        </ul>
+        <div class="bar-close">
+          <button type="button" class="btn btn-close"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="container">
+        <img id="logotipo" src="img/logo.png" alt="Logotipo"/>
+      </div>
+
+        <!-- Menu de navegação -->
+        <div class="container">
+
+          <!-- Mobile -->
+          <button id="btn-bars" type="button"><i class="fas fa-bars"></i></button>
+          <button id="btn-search" type="button"><i class="fas fa-search"></i></button>
+
+            <div class="row">
+              <nav id="menu" class="pull-right">
+                <ul>
+									<li><a href="index.html">Home</a></li>
+                  <li><a href="#">Games</a></li>
+                  <li><a href="#">Tecnologia</a></li>
+                  <li><a href="#">Curiosidades</a></li>
+                  <li><a href="#">Novidades</a></li>
+                  <li class="search">
+                    <div class="input-group">
+                      <input type="text" placeholder="Pesquisa..."/>
+                      <span class="input-group-btn">
+                        <button class="" type="button"><i class="fas fa-search"></i></button>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <section>
+			<div id="cadastro" class="container">
+			<h2>Cadastro</h2>
+			<!-- Formulário -->
+			<form action="" method="post">	
+				<section class="formDados">
+					<h1>Dados Pessoais</h1>
+					<div class="secao">
+						<span class="org">
+							<label for="firstName"> Nome </label>				
+							<input class="nome" type="text" id= "firstName" name="firstName" required> 
+						</span>
+						<span class="org">
+							<label for="email">Email</label> 
+							<input class="email" type="email" id="email" name="email" placeholder="seu-email@email.com" required>
+						</span>
+						<br>
+						<label>Sexo</label>
+						<input type="radio" name="sexo" value="male" checked> Masculino
+						<input type="radio" name="sexo" value="female"> Feminino	
+						<br>
+						<br>
+					</div>
+				</section>
+				
+				<section class="interesses">
+					<br>
+					<h1>Interesses</h1>
+					<div class="secao">
+						<label class="check"><input type="checkbox" name="interesse" value="0" />Mobilidade</label>
+						<label class="check"><input type="checkbox" name="interesse" value="1" />Games e consoles</label>					
+						<label class="check"><input type="checkbox" name="interesse" value="2" />Segurança</label>
+						<label class="check"><input type="checkbox" name="interesse" value="3" />Redes Sociais</label>
+						<label class="check"><input type="checkbox" name="interesse" value="4" />Áudio e Vídeo</label>
+						<label class="check"><input type="checkbox" name="interesse" value="5" />Programação</label>
+						<label class="check"><input type="checkbox" name="interesse" value="6" />Computadores e redes</label>
+						<label class="check"><input type="checkbox" name="interesse" value="7" />Dicas e Tutoriais</label>
+					</div>
+				</section>
+			
+				<br><br><br>
+					<section class="notificacao">
+						<div class="secao">
+							<label>
+								<input type="checkbox" name="notificacoes" value="0" />Receber informações e promoções de parceiros por e-mail
+							</label>
+							<br>
+							<input id="send" type="submit" value="Enviar Cadastro" />	
+							<br><br>
+						</div>
+					</section>
+				</form>
+				<br><br>
+				</div>
+			</section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="row row-cinza-claro">
+        <div class="container">
+					<div class="row">
+						<div class="col-md-2 text-center">
+							<img class="logotipo" src="img/logo.png" alt="Logotipo">
+						</div>
+						<div class="col-md-10">
+							<div class="row row-cols">
+								<div class="col-md-5 col-links hidden-xs">
+									<h4>LINKS</h4>
+									<ul class="list-unstyled">
+										<li><a href="#"><i class="fa fa-angle-right"></i>Games</a></li>
+										<li><a href="#"><i class="fa fa-angle-right"></i>Tecnologia</a></li>
+										<li><a href="#"><i class="fa fa-angle-right"></i>Curiosidades</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i>Novidades</a></li>
+									</ul>
+								</div>
+								<div class="col-md-5 col-get-in-touch">
+									<h4 class="hidden-xs">LOCALIZAÇÃO</h4>
+									<address class="hidden-xs">
+										<i class="fas fa-map-marker-alt"></i> <span>Rodovia BR-230, KM 22, s/n - 58053-000<br/>Água Fria, João Pessoa - PB</span>
+									</address>
+									<p class="hidden-xs"><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>0800 707 9210</a></p>
+									<ul class="list-unstyled list-socials">
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="row row-cinza-escuro">
+        <div class="container copyright-mobile">
+          <p class="pull-left">Copyright © WebTech 2018. All rights reserved.</p>
+					<p class="pull-right text-roxo">Created by WebTech Developers</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap 3 - JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

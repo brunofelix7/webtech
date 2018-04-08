@@ -287,3 +287,91 @@ footer .list-socials i {
 #btn-bars, #btn-search{
   display: none;
 }
+
+
+/*--------------------- Cadastro -----------------*/
+#cadastro div.secao {  
+  text-align: center;
+  width: 100%;
+  background-color: #e6e6ff;
+  padding-top: 12px;
+  border-radius: 20px;
+}
+
+#cadastro h2 {
+  color: #5E2799;
+  font-family: 'OpenSans-Light';
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#cadastro h1 {
+  color: #5E2799;
+  font-family: 'OpenSans-Light';
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#cadastro label {
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-size: 12px;
+  color: #5E2799;
+  margin-right: 3px;  
+}
+
+#cadastro input.nome {
+  width: 350px;
+  margin-right: 10px;
+}
+
+#cadastro input.email {
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#cadastro label.check{
+  margin-right: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#cadastro input#send {
+  color: #fff;
+  background-color: #5E299A;
+  border-color: #5E299A;
+}
+
+@media only screen and (max-width: 768px){
+
+  #cadastro div.secao input.nome {
+    width: 50%;
+  }
+
+  #cadastro div.secao input.email {
+    width: 25%;
+  }
+
+}
+
+/*-------------- Cadastro responsivo ----------------*/
+@media only screen and (max-width: 710px){
+
+  #cadastro div.secao input.nome {
+    width: 70%;
+  }
+
+  #cadastro div.secao input.email {
+    width: 70%;
+    margin-left: 9px;
+  }
+
+  #cadastro span.org {
+    white-space: nowrap;
+  }
+
+}
